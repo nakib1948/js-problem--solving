@@ -1,41 +1,41 @@
 //1.Task: Array Filtering And Mapping
 function filterAndMapping(arr) {
-    return arr.filter(people => people.gender !== "female").map(people => people.name);
+    return arr.filter(people => people.Gender !== "female").map(people => people.Name);
 }
 // console.log(
 //     filterAndMapping([
-//         { name: "Fatima", age: 30, gender: "female" },
-//         { name: "Mosharof", age: 40, gender: "male" },
-//         { name: "Khadiza", age: 25, gender: "female" },
-//         { name: "Jalal", age: 50, gender: "male" },
+//         { Name: "Fatima", Age: 30, Gender: "female" },
+//         { Name: "Mosharof", Age: 40, Gender: "male" },
+//         { Name: "Jalal", Age: 50, Gender: "male" },
+//         { Name: "Khadiza", Age: 25, Gender: "female" },
 //     ])
 // );
 
 //2.Task: Object Manipulation
 
 function objectManipulation(arr) {
-    return arr.map(book => book.title)
+    return arr.map(book => book.Title)
 }
 // console.log(objectManipulation([
-//     { title: "To Kill a Mockingbird", author: "Harper Lee", year: 1960 },
-//     { title: "1984", author: "George Orwell", year: 1949 },
-//     { title: "The Great Gatsby", author: "F. Scott Fitzgerald", year: 1925 },
+//     { Title: "To Kill a Mockingbird", Author: "Harper Lee", Year: 1960 },
+//     { Title: "1984", Author: "George Orwell", Year: 1949 },
+//     { Title: "The Great Gatsby", Author: "F. Scott Fitzgerald", Year: 1925 },
 // ]));
 
 //5.Task: Find And Modify
 function printAndModify(arr, name, age) {
     return arr.map(person => {
-        if (person.name === name) {
-            person.age = age;
+        if (person.Name === name) {
+            person.Age = age;
         }
         return person
     })
 }
 // console.log(printAndModify([
-//     { name: "Hayat", age: 20 },
-//     { name: "Hossain", age: 25 },
-//     { name: "Nakib", age: 30 },
-// ], "Nakib", 30));
+//     { Name: "Hayat", Age: 20 },
+//     { Name: "Hossain", Age: 25 },
+//     { Name: "Nakib", Age: 30 },
+// ], "Nakib", 35));
 
 //6.Task: Array Reduction
 function arrayReduction(arr) {
@@ -56,6 +56,6 @@ function arrayReduction(arr) {
 function maximumValue(arr) {
     return Math.max(...arr)
 }
-console.log(maximumValue([
-    1, 2, 3, 40, 5, 6, 7, 8, 9, 10
-]));
+// console.log(maximumValue([
+//     1, 2, 3, 40, 5, 6, 7, 8, 9, 10
+// ]));
