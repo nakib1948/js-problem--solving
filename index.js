@@ -56,6 +56,6 @@ function arrayReduction(arr) {
 function maximumValue(arr) {
     return Math.max(...arr)
 }
-console.log(maximumValue([
-    1, 2, 3, 40, 5, 6, 7, 8, 9, 10
-]));
+// console.log(maximumValue([
+//     1, 2, 3, 40, 5, 6, 7, 8, 9, 10
+// ]));
